@@ -1,16 +1,12 @@
+
+import {ProfileList} from './ProfileList';
+import user from '../jsonFile/user.json';
+
+console.log(user);
+
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+  return <div>
+    <ProfileList user={user} />
+  </div>
 };
