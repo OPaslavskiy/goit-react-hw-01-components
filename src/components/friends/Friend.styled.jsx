@@ -49,7 +49,7 @@ export const OnLine = styled.span`
       if (!props.isOnline) {
         return '#f76d6d';
       } else {
-        return '34cc34';
+        return '#34cc34';
       }
     }};
   }
