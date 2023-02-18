@@ -1,7 +1,8 @@
+import { TitelStat } from './Statistics.styled';
 import PropTypes from 'prop-types';
 export const Titel = ({ titel }) => {
   if (titel) {
-    return <h2>{titel}</h2>;
+    return <TitelStat>{titel.toUpperCase()}</TitelStat>;
   } else {
     <></>;
   }

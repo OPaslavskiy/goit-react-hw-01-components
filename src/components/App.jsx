@@ -7,15 +7,16 @@ import data from '../jsonFile/data.json';
 import friends from '../jsonFile/friends.json';
 import transactions from '../jsonFile/transactions.json';
 import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <GlobalStyle />
       <ProfileList user={user} />
       <Statistics titel="Upload stats" data={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Layout>
   );
 };

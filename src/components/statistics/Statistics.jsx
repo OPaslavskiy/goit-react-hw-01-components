@@ -1,11 +1,12 @@
 import { StatisticsList } from './StatisticsList';
 import { Titel } from './Titel';
+import { StatisticsSection } from './Statistics.styled';
 
 export const Statistics = ({ titel, data }) => {
   return (
-    <section class="statistics">
+    <StatisticsSection>
       <Titel titel={titel} />
       <StatisticsList data={data} />
-    </section>
+    </StatisticsSection>
   );
 };
