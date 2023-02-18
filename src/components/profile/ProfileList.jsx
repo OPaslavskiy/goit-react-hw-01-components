@@ -17,8 +17,8 @@ export const ProfileList = ({ user }) => {
       <Description>
         <Avatar src={user.avatar} alt={user.username} class="avatar" />
         <Name>{user.username}</Name>
-        <p class="tag">@{user.tag}</p>
-        <p class="location">{user.location}</p>
+        <p>@{user.tag}</p>
+        <p>{user.location}</p>
       </Description>
       <Stats>
         <li>

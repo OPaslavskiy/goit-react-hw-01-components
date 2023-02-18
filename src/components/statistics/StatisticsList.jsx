@@ -7,7 +7,7 @@ export const StatisticsList = ({ data }) => {
     <StatList>
       {data.map(el => (
         <Item key={el.id} style={{ backgroundColor: getRandomHexColor() }}>
-          <span class="label">{el.label}</span>
+          <span>{el.label}</span>
           <Percentage>{el.percentage}%</Percentage>
         </Item>
       ))}
