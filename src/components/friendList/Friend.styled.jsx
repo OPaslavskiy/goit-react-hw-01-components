@@ -45,7 +45,6 @@ export const OnLine = styled.span`
     height: 24px;
     border-radius: 50%;
     text-align: center;
-    background-color: #34cc34;
     background-color: ${props => {
       if (!props.isOnline) {
         return '#f76d6d';
