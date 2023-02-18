@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Friends = styled.ul`
+export const FriendsUl = styled.ul`
   margin: auto;
   background-color: #f1ebf7;
   width: 350px;
