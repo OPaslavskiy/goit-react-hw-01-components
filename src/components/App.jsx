@@ -6,10 +6,12 @@ import user from '../jsonFile/user.json';
 import data from '../jsonFile/data.json';
 import friends from '../jsonFile/friends.json';
 import transactions from '../jsonFile/transactions.json';
+import { GlobalStyle } from './GlobalStyle';
 
 export const App = () => {
   return (
     <div>
+      <GlobalStyle />
       <ProfileList user={user} />
       <Statistics titel="Upload stats" data={data} />
       <FriendList friends={friends} />
