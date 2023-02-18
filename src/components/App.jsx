@@ -1,6 +1,6 @@
 import { ProfileList } from './profile/ProfileList';
 import { Statistics } from './statistics/Statistics';
-import { FriendList } from './friendList/FriendList';
+import { FriendList } from './friends/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import { Layout } from './Layout';
 import { GlobalStyle } from './GlobalStyle';
