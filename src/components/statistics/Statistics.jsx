@@ -1,12 +1,24 @@
 import { StatisticsList } from './StatisticsList';
-import { TitelStat } from './Statistics.styled';
+import { TitleStat } from './Statistics.styled';
 import { StatisticsSection } from './Statistics.styled';
+import PropTypes from 'prop-types';
 
-export const Statistics = ({ titel, data }) => {
+export const Statistics = ({ title, data }) => {
   return (
     <StatisticsSection>
-      {titel && <TitelStat> {titel.toUpperCase()}</TitelStat>}
+      {title && <TitleStat> {title.toUpperCase()}</TitleStat>}
       <StatisticsList data={data} />
     </StatisticsSection>
   );
+};
+
+Statistics.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+  title: PropTypes.string,
 };

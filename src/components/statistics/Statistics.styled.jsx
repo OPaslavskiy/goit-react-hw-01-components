@@ -12,7 +12,7 @@ export const StatisticsSection = styled.section`
   border-radius: 5%;
 `;
 
-export const TitelStat = styled.h2`
+export const TitleStat = styled.h2`
   color: #111111ce;
   text-align: center;
   font-weight: 600;
