@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import { StatList, Item, Percentage } from './Statistics.styled';
 import { getRandomHexColor } from '../../utils/randomColor';
 

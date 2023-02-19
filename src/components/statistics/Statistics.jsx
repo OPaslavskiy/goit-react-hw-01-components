@@ -1,11 +1,11 @@
 import { StatisticsList } from './StatisticsList';
-import { Titel } from './Titel';
+import { TitelStat } from './Statistics.styled';
 import { StatisticsSection } from './Statistics.styled';
 
 export const Statistics = ({ titel, data }) => {
   return (
     <StatisticsSection>
-      <Titel titel={titel} />
+      {titel && <TitelStat> {titel.toUpperCase()}</TitelStat>}
       <StatisticsList data={data} />
     </StatisticsSection>
   );

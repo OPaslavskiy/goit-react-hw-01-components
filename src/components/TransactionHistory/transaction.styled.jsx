@@ -17,7 +17,7 @@ export const TransactionHistoryTabel = styled.table`
     font-size: 18px;
   }
 
-  tbody:nth-child(even) {
+  tr:nth-child(even) {
     background-color: #fff;
   }
 
